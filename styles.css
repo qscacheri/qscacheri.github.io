@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+html{
+    scroll-behavior: smooth;
+
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    /* background-image: url("images/book.jpg"); */
+    font-family: Raleway;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url('images/book.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-short{
+  /* The image used */
+  background-image: url('images/book.jpg');
+
+  /* Full height */
+  height: 25%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+hr{
+    border-color: red;
+    width: 75%;
+    background: red;
+}
+
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-item{
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+    text-decoration: none;
+}
+
+.container>h1{
+    color: white;
+    margin: 0;
+    font-size: 8em;
+}
+#home{
+    width: 70%;
+}
+
+/* ABOUT BEGIN */
+#about > h2{
+    color: gold;
+}
+
+.about-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#about, #portfolio{
+    width: 100%;
+    background: white;
+}
+
+h2 {
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 3em;
+}
+#about>p
+{
+    /* text-align: center; */
+    font-size: 2em;
+    color: black;
+    margin-left: 25%;
+    margin-right: 20%;
+
+}
+
+/* ABOUT END */
+
+/* PORTFOLIO BEGIN */
+#portfolio > h2{
+    color: red;
+}
+
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+}
+
+.iframe-container, #piet-container, .img-container{
+    width: 50%;
+    height: 50vh;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+#piet-container{
+    margin-bottom: 5vh;
+}
+
+iframe{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+h3, .portfolio-item > p, .iframe-container, #piet-container, .img-container{
+    margin-left: 20%;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+#piet-container{
+    background: red;
+}
+
+/* PORTFOLIO END */
+
+/* RESUME BEGIN */
+#resume > h2{
+    color: aqua;
+}
+
+#resume > img{
+    width: 100%;
+}
+/* RESUME END */
+
+/* CONTACT BEGIN*/
+#contact > h2{
+    color: green;
+}
+
+
+
+/* CONTACT END */
