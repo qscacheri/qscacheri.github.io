@@ -12,19 +12,20 @@
 </head>
 
 <body>
-      <div class="parallax"></div>
       <div class="container">
-            <header>
-                  <a id="home" class='nav-item' href="#">Quin Scacheri</a>
-                  <nav>
-                        <a class='nav-item' href="#about">About</a>
-                        <a class='nav-item' href="#portfolio">Portfolio</a>
-                        <a class='nav-item' href="#resume">Resume</a>
-                        <a class='nav-item' href="#contact">Contact</a>
-                  </nav>
-            </header>
+          <a href="#nav" hidden id="back">Back to top</a>
+            <nav id="nav">
+                  <!-- <a id="home" class='nav-item' href="#">Quin Scacheri</a> -->
+                  <a class='nav-item' href="#about">About</a>
+                  <a class='nav-item' href="#portfolio">Portfolio</a>
+                  <a class='nav-item' href="#resume">Resume</a>
+                  <a class='nav-item' href="#contact">Contact</a>
+            </nav>
             <h1 id="name">Quin Scacheri</h1>
       </div>
+
+      <div class="parallax"></div>
+
       <div id="about">
             <h2>About</h2>
             <p>
@@ -54,12 +55,11 @@
 
             <div class="portfolio-item">
                   <h3>Magenta Beats</h3>
-                  <p class='description'>The Groove Pizza Plug-In is an advanced audio plug-in version
-                        of the NYU MusEDLab’s web-app of the same name that has been used by hundreds of
-                        thousands of people. The Groove Pizza is a piece of educational software that
-                        allows users to learn the fundamentals of rhythm. The plug-in version allows
-                        the user to easily make beats in their recording software and by necessity was
-                        completely rebuilt from scratch.
+                  <p class='description'>
+                      Magenta Beats is an audio plug-in that uses Google’s Magenta
+                      machine learning library to create new drum beats based on the
+                       user’s original inputted beat. The machine-generated pattern
+                       can then be fed back into itself to create more unique beats.
                   </p>
                   <div class="iframe-container">
                         <iframe src="https://www.youtube.com/embed/cfjhcLsOwrg"></iframe>
@@ -78,12 +78,12 @@
 
             <div class="portfolio-item">
                   <h3>RO-MC-001 (Remote-Operated Mic Clip)</h3>
-                  <p class='description'>The Groove Pizza Plug-In is an advanced audio plug-in version
-                        of the NYU MusEDLab’s web-app of the same name that has been used by hundreds of
-                        thousands of people. The Groove Pizza is a piece of educational software that
-                        allows users to learn the fundamentals of rhythm. The plug-in version allows
-                        the user to easily make beats in their recording software and by necessity was
-                        completely rebuilt from scratch.
+                  <p class='description'>
+                      The Remote-Operated Mic Clip allows a user to
+                      change the angle of a microphone from anywhere
+                      using a Bluetooth remote. The clip was specifically
+                      designed for concert recordists with tall mic
+                      stands or boom operators with long poles.
                   </p>
                   <div class="iframe-container">
                         <iframe src="https://www.youtube.com/embed/aPVoBnjZSRA"></iframe>
@@ -94,7 +94,12 @@
             <div class="portfolio-item">
                   <h3>Word Tree</h3>
                   <p class='description'>
-                        The Sound Garden is an online, virtual reality, collaborative audio experience and can be found here.
+                      The Word Tree program uses a large string of text
+                      to create a unique tree starting with the first
+                      word of the text as the trunk of the tree. The
+                      remaining branches are created using the subsequent
+                      words or series of words. The user can control the
+                      color combinations of each tree.
                   </p>
                   <div class="img-container">
                         <img src="images/wordtree.jpg" alt="">
@@ -113,12 +118,10 @@
 
             <div class="portfolio-item">
                   <h3>Procedural Piet</h3>
-                  <p class='description'>The Groove Pizza Plug-In is an advanced audio plug-in version
-                        of the NYU MusEDLab’s web-app of the same name that has been used by hundreds of
-                        thousands of people. The Groove Pizza is a piece of educational software that
-                        allows users to learn the fundamentals of rhythm. The plug-in version allows
-                        the user to easily make beats in their recording software and by necessity was
-                        completely rebuilt from scratch.
+                  <p class='description'>
+                      Black Box is a web based game inspired by the iOS app of the same name,
+                      that requires players to think outside the box in order to solve challenging
+                      puzzles. 
                   </p>
                   <div id="piet-container"></div>
                   <script src="procedural-piet.js" charset="utf-8"></script>
