@@ -54,9 +54,12 @@ function draw()
 
 function mousePressed()
 {
-    var widthRatio = width / 910;
-    var heightRatio = height / 607;
-    painting = new Painting(widthRatio * (700 / 2), heightRatio * (84 / 2), widthRatio * (456 / 2), heightRatio * (750 / 2));
+    if (mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height)
+    {
+        var widthRatio = width / 910;
+        var heightRatio = height / 607;
+        painting = new Painting(widthRatio * (700 / 2), heightRatio * (84 / 2), widthRatio * (456 / 2), heightRatio * (750 / 2));
+    }
 }
 
 class Rectangle
