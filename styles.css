@@ -117,7 +117,7 @@ nav > a:hover:nth-child(4){
 
 #back{
     position: fixed;
-    left: 10px;
+    right: 10px;
     top: 10px;
     color: black;
     text-decoration: none;
@@ -183,11 +183,18 @@ h3, .description, .iframe-container, #piet-container, .img-container{
 .description{
     width: 50vw;
 }
+
+#gp{
+    margin-top: 0;
+}
+
 h3
 {
-    margin-top: 10%;
+    margin-top: 5%;
     font-size: 2em;
 }
+
+
 
 #piet-container{
     /* background: red; */
