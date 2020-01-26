@@ -57,6 +57,8 @@ a:visited{
     color: black;
 }
 
+.nav-item{color: black;}
+
 nav{
     position: absolute;
     left: 0;
