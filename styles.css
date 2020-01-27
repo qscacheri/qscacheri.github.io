@@ -247,6 +247,10 @@ h3
     font-size: 1.3em;
 }
 
+#resume-header > p{
+    margin: 5px;
+}
+
 .resume-item{
     margin-bottom: 3%;
 }
