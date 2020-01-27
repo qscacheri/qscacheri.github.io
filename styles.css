@@ -217,7 +217,7 @@ h3
     margin-bottom: 5%;
 }
 
-#resume-header > a:visited, #resume-header > a, .email {
+#resume-header > a:visited, #resume-header > a, .email, #my-website {
     color: black;
 }
 #resume > h2{
