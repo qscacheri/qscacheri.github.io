@@ -72,13 +72,14 @@ nav{
     justify-content: flex-end;
 }
 
-#name{font-weight: 100;}
+#name{ font-weight: 100; }
 
 .nav-item{
     margin: 10px;
     font-size: 2em;
     color: black;
     text-decoration: none;
+    font-weight: 100;
 }
 
 nav > a:hover{
