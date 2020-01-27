@@ -141,6 +141,7 @@ h2 {
     margin-left: 20%;
     margin-right: 20%;
     font-size: 3em;
+    font-weight: 100;
 }
 #about>p, #contact>p
 {
@@ -201,6 +202,8 @@ h3
 {
     margin-top: 5%;
     font-size: 2em;
+    font-weight: 300;
+
 }
 
 /* PORTFOLIO END */
