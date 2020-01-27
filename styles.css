@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,400,600&display=swap');
 
 
 html{
@@ -13,6 +13,7 @@ html, body{
 
 body{
     font-family: Raleway;
+    font-weight: 100;
 }
 
 .parallax {
@@ -200,12 +201,6 @@ h3
     font-size: 2em;
 }
 
-
-
-#piet-container{
-    /* background: red; */
-}
-
 /* PORTFOLIO END */
 
 /* RESUME BEGIN */
@@ -214,6 +209,7 @@ h3
     text-align: center;
     width: 100%;
     font-weight: 600;
+    margin-bottom: 5%;
 }
 
 #resume-header > a:visited, #resume-header > a, .email {
@@ -239,6 +235,12 @@ h3
 
 .resume-item > p{
     margin-left: 30%;
+    font-size: 1.3em;
+    font-weight: 300;
+}
+
+.section-header{
+    font-size: 1.3em;
 }
 
 .resume-item{
@@ -278,8 +280,9 @@ h3
     nav{
         justify-content: space-between;
     }
-    .nav-item{
+    .nav-item > a, .nav-item:visited, .nav-item{
         font-size: 1em;
+        color: white
     }
 
     #about > p{
@@ -313,5 +316,14 @@ h3
     .parallax, .parallax-short{
         background-attachment: scroll;
     }
+
+    .section-header{
+        margin-left: 0;
+    }
+    
+    .resume-item > p{
+        margin-left: 10%;
+    }
+    
 
 }
