@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100&display=swap');
+
+
 html{
     scroll-behavior: smooth;
 
@@ -207,6 +209,16 @@ h3
 /* PORTFOLIO END */
 
 /* RESUME BEGIN */
+#resume-header{
+    font-family: Raleway;
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+#resume-header > a:visited, #resume-header > a, .email {
+    color: black;
+}
 #resume > h2{
     color: aqua;
     margin-bottom: 10px;
@@ -220,6 +232,19 @@ h3
 #resume > img{
     width: 100%;
 }
+
+.section-header{
+    margin-left: 20%;
+}
+
+.resume-item > p{
+    margin-left: 30%;
+}
+
+.resume-item{
+    margin-bottom: 3%;
+}
+
 /* RESUME END */
 
 /* CONTACT BEGIN*/
@@ -234,6 +259,11 @@ h3
 #contact > p{
     margin-bottom: 20px;
 }
+
+.bold{
+    font-weight:600;
+}
+
 
 
 
