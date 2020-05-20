@@ -1,5 +1,17 @@
-html, body, #root {
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+body {
   width: 100%;
   height: 100%;
   margin: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
