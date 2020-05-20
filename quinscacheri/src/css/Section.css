@@ -1,0 +1,14 @@
+.Section {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.Section > h2 {
+    margin: 0;
+    font-weight: 200;
+}

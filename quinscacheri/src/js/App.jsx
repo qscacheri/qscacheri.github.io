@@ -3,18 +3,18 @@ import '../css/App.css';
 import Portfolio from './Portfolio';
 import { Parallax, Background } from 'react-parallax';
 import Resume from './Resume'
+import About from './About'
 function App() {
   return (
-    <div className="App">
-      <div className="parallax-wrapper">
-
-      <Portfolio />
+    <div className="App parallax-wrapper">
+        <h1 className='title'>Quin Scacheri</h1>
+        <About />
+        <Portfolio />
+        <Portfolio />
 
       </div>
 
    
-
-    </div>
 
   );
 }
