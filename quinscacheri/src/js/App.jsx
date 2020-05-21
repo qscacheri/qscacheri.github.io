@@ -10,8 +10,7 @@ function App() {
         <h1 className='title'>Quin Scacheri</h1>
         <About />
         <Portfolio />
-        <Portfolio />
-
+        <Resume />
       </div>
 
    
