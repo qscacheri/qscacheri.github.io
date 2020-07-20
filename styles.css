@@ -216,6 +216,10 @@ h3
 /* PORTFOLIO END */
 
 /* RESUME BEGIN */
+#resume {
+    display: flex;
+    flex-direction: column;
+}
 #resume-header{
     font-family: Raleway;
     text-align: center;
@@ -288,6 +292,7 @@ h3
 
 #download {
     font-size: 2em;
+    margin-bottom: 10%;
 }
 
 
