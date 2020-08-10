@@ -1,7 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import '../css/PortfolioItem.css'
+import styled from 'styled-components'
+// import '../css/PortfolioItem.css'
+const PortfolioItemContainer = styled.div`
+    width: 100%;
+    height: 100%;
+    background: blue;
+`
+const Thumbnail = styled.img`
+    max-width: 100%;
+    height: auto;
+`
 
-function PortfolioItem({name, imgSrc, youtubeLink, selectedProject, handleClick}) {
+function PortfolioItem({ name, imgSrc, youtubeLink, selectedProject, handleClick }) {
     const [selected, setSelected] = useState(false)
     const [thumbnailURL, setThumbnailURL] = useState("")
 
@@ -13,18 +23,15 @@ function PortfolioItem({name, imgSrc, youtubeLink, selectedProject, handleClick}
 
     useEffect(() => {
         console.log(selectedProject);
-        
-        setSelected(name === selectedProject)     
-        getYoutubeThumbnail()       
+
+        setSelected(name === selectedProject)
+        getYoutubeThumbnail()
     })
 
-    const className = selected ? "PortfolioItem selected" : "PortfolioItem"
-    console.log(className);
-    
-    return (<div className={className} onClick={() => handleClick(name)}>
-        <h3>{name}</h3>
-        <img src={thumbnailURL ? thumbnailURL : imgSrc} alt="project"/>
-    </div>)
+    return (<PortfolioItemContainer onClick={() => handleClick(name)}>
+        {/* <h3>{name}</h3> */}
+        <Thumbnail src={thumbnailURL ? thumbnailURL : imgSrc} alt="project" />
+    </PortfolioItemContainer>)
 }
 
 export default PortfolioItem

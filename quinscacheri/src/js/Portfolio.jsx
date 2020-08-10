@@ -1,8 +1,21 @@
 import React, { useState } from 'react'
 import PortfolioItem from './PortfolioItem'
-import '../css/Section.css'
-import '../css/Portfolio.css'
+import styled from 'styled-components'
+// import '../css/Section.css'
+// import '../css/Portfolio.css'
 
+const PortfolioContainer = styled.div`
+    width: 60vw;
+    margin: 0 auto;
+`
+
+const Projects = styled.div`
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+
+`
 function Portfolio() {
     const [selectedProject, setSelectedProject] = useState("")
 
@@ -11,16 +24,16 @@ function Portfolio() {
             setSelectedProject("")
         else
             setSelectedProject(name)
-        
+
         console.log(name);
-        
+
     }
 
-    const sharedProps = {selectedProject, handleClick}
+    const sharedProps = { selectedProject, handleClick }
 
-    return (<div className="Portfolio Section">
+    return (<PortfolioContainer>
         <h2>Portfolio</h2>
-        <div className='projects'>
+        <Projects>
             <PortfolioItem
                 name="Ringo"
                 youtubeLink="https://www.youtube.com/watch?v=uUXDx-zDprc"
@@ -100,9 +113,9 @@ function Portfolio() {
                 handleClick={handleClick}
             />
 
-        </div>
+        </Projects>
 
-    </div>)
+    </PortfolioContainer>)
 }
 
 export default Portfolio
