@@ -5,7 +5,6 @@ const SideTextContainer = styled.div`
     display: flex;
     justify-content: ${props => props.right ? 'flex-start' : 'flex-end'};
     background: white;
-    font-size: 24px;
     height: 50vh;
     width: 100%;
     background: none;
@@ -14,6 +13,7 @@ const SideTextContainer = styled.div`
         height: 50%;
         width: 25%;
         background: none;
+        font-size: 36px;
     }
 `
 
@@ -28,14 +28,13 @@ export const SideText = ({ children, left = true, right }) => {
 const SectionHeaderContainer = styled.div`
     display: flex;
     justify-content: ${props => props.right ? 'flex-start' : 'flex-end'};
-    height: 100vh;
     h1 {
         font-weight: 200;
-        font-size: 56px;
+        font-size: 72px;
         margin: 24px;
     }
 `
-export const SectionHeader = ({ children, left, right }) => {
+export const SectionHeader = ({ children, left, right }, ref) => {
     return <SectionHeaderContainer left={left} right={right}>
         <h1>
             {children}

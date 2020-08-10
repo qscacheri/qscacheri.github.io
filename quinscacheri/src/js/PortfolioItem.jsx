@@ -22,8 +22,6 @@ function PortfolioItem({ name, imgSrc, youtubeLink, selectedProject, handleClick
     }
 
     useEffect(() => {
-        console.log(selectedProject);
-
         setSelected(name === selectedProject)
         getYoutubeThumbnail()
     })

@@ -4,8 +4,11 @@ import styled, { createGlobalStyle } from 'styled-components'
 import { Parallax, Background } from 'react-parallax';
 import { SideText, SectionHeader } from './Layout';
 import useScroll from './useScroll'
+import useScrollDirection from './useScrollDirection'
+
 import { useState } from 'react';
 import { useRef } from 'react';
+import Skills from './Skills';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Raleway:100,300,600&display=swap');
@@ -22,7 +25,7 @@ const Header = styled.header`
 `
 const Title = styled.h1`
   font-weight: 200;
-  font-size: 56px;
+  font-size: 100px;
 
 `
 const Nav = styled.nav`
@@ -31,30 +34,14 @@ const Nav = styled.nav`
 `
 
 const Divider = styled.div`
-  height: 50vh;
-  background: white;
+  height: 2px;
+  background: pink;
   width: 100vw;
 `
 
 function App() {
-  const scrollPos = useScroll()
-  const [previousScroll, setPreviousScroll] = useState(0)
-  const [scrollingToElement, setScrollingToElement] = useState(false)
+
   const skillsRef = useRef()
-  useEffect(() => {
-    if (scrollPos > previousScroll) {
-      console.log("down");
-      setScrollingToElement(true)
-      window.scrollTo(0, skillsRef.current.offsetTop)
-    }
-    else
-      console.log("up");
-
-    setPreviousScroll(scrollPos)
-    if (skillsRef.current)
-      window.scrollTo(0, skillsRef.current.offsetTop)
-
-  }, [skillsRef])
   return (
     <AppContainer className='App'>
       <GlobalStyle />
@@ -64,16 +51,16 @@ function App() {
             <Title>Quin Scacheri</Title>
             <Nav>
               <a>Bio</a>
-              <a>Skills</a>
+              <div onClick={() => skillsRef.current.scrollIntoView({
+                behavior: "smooth"
+              })}>Skills</div>
               <a>Projects</a>
             </Nav>
           </Header>
         </div>
       </Parallax>
-      <Parallax bgImage={require('../images/tree2.svg')} strength={200} bgImageStyle={{ left: "0vw" }} >
-        <div ref={skillsRef}>Skills</div>
-
-      </Parallax>
+      <Divider />
+      <Skills ref={skillsRef} />
       <SideText right>
         Quin is a graduate of the Music Technology program at New York
         University specializing in computer science and hardware development.
