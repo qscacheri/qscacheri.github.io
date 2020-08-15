@@ -3,31 +3,28 @@ import styled from 'styled-components'
 
 const SideTextContainer = styled.div`
     display: flex;
-    justify-content: ${props => props.right ? 'flex-start' : 'flex-end'};
+    justify-content: ${props => props.right ? 'flex-end' : 'flex-start'};
     background: white;
-    height: 50vh;
-    width: 100%;
+    height: 100%;
+    width: 100vw;
     background: none;
-    p {
-        margin: auto 0;
-        height: 50%;
-        width: 25%;
-        background: none;
-        font-size: 36px;
-    }
 `
 
-export const SideText = ({ children, left = true, right }) => {
+const ColumnContent = styled.div`
+    display: flex;
+    flex-direction: column;
+`
+
+export const SideColumn = ({ children, left, right }) => {
     return <SideTextContainer left={left} right={right}>
-        <p>
+        <ColumnContent>
             {children}
-        </p>
+        </ColumnContent>
     </SideTextContainer>
 }
 
 const SectionHeaderContainer = styled.div`
-    display: flex;
-    justify-content: ${props => props.right ? 'flex-start' : 'flex-end'};
+    text-align: ${props => props.right ? 'right' : 'left'};
     h1 {
         font-weight: 200;
         font-size: 72px;
